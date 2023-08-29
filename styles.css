@@ -1,0 +1,95 @@
+/* Reset some default browser styles */
+body, h1, ul, li, form, input, select, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background gradient */
+body {
+  background: linear-gradient(to bottom right, #f1f1f1, #e0e0e0);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border-bottom: 2px solid #333;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+select, input[type="number"], input[type="text"], input[type="date"] {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;  /* Adjust font size here */
+}
+
+input[type="date"] {
+  font-size: 15px;  /* Make the date font size larger */
+  padding: 12px 40px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Budget list styling */
+#budget-list {
+  list-style: none;
+}
+
+#budget-list li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#budget-list li.income {
+  background-color: #d4edda;  /* Different background color for income */
+}
+
+#budget-list li.expense {
+  background-color: #f8d7da;  /* Different background color for expense */
+}
+
+/* Total display styling */
+#total-income, #total-expense, #total {
+  font-size: 18px;
+  margin: 10px 0;
+}
